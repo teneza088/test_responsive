@@ -1,0 +1,548 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden !important;  
+}
+body{
+    background-image: url("Image/BG.png");
+    position: relative;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+
+.real{
+    width: 100vw;
+    position: relative;
+    overflow: hidden;  
+    box-sizing: border-box;
+}
+
+
+img#H_khon,#H_khon2,#H_khon3,#H_khon4{
+    cursor: pointer;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index:10; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+.modal-content {
+      display: flex;
+      width: 24%;
+      top: 50%;  
+      left: 50%;
+      transform: translate(-50%, -50%);  
+      overflow: hidden;
+      background-color: rgba(0,0,0,0); 
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    
+}
+.modal-content-hanumarn {
+      display: flex;
+      width: 24%;
+      top: 50%;  
+      left: 50%;
+      transform: translate(-50%, -50%);  
+      overflow: hidden;
+      background-color: rgba(0,0,0,0); 
+      animation-name: zoom;
+      animation-duration: 0.6s;
+   
+}
+@keyframes zoom {
+    from {transform:scale(0.1)} 
+    to {transform:scale(1)}
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 11;
+    cursor: pointer;
+}
+.closed {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.test{
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1%;
+}
+
+
+.parallax{
+    width: 100vw;
+}
+
+
+
+
+/* head */
+.header{
+    height: 750px;
+}
+.parallax img#god{
+    position: absolute;
+    pointer-events: none;
+    width: 44%;
+    margin-left: 27%;
+    margin-top: 1.5%;
+    z-index:4;
+}
+.parallax img#H_cloud1{
+    position: absolute;
+    width: 70%;
+    margin-top: 12%;
+    margin-left: 30%;
+    z-index: 3;
+    pointer-events: none;
+}
+.parallax img#H_cloud2{
+    position: absolute;
+    width: 60%;
+    margin-top: 17%;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+.parallax img#H_cloud3{
+    position: absolute;
+    width: 40%;
+    right: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+.parallax img#H_cloud4{
+    position: absolute;
+    width: 30%;
+    margin-left: 62%;
+    margin-top: 25%;
+    z-index: 2;
+    pointer-events: none;
+}
+.parallax img#ele18{
+    position: absolute;
+    margin-left: 31%;
+    width: 10%;
+    margin-top: 1.5%;
+    z-index: 5;
+    pointer-events: none;
+}
+.parallax img#ele19{
+    position: absolute;
+    margin-left: 19%;
+    width: 17%;
+    margin-top: 8%;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* sec1 */
+.section1{
+    height: 900px;
+}
+.video_{
+    width: 78%;
+    margin-top: -5%;
+    margin-left: 11%;
+    
+}
+.parallax img#ele_clound1{
+    position: absolute;
+    width: 70%;
+    margin-top: 35%;
+    left: 0;
+    transform: scaleX(-1);
+    pointer-events: none;
+}
+
+
+
+
+/*sec2*/
+img.RGraphic{
+    transform: translateX(100px);
+    padding-bottom: 10%;
+    width: 75%;
+    opacity: 0;
+}
+img#H_khon{
+    opacity: 1;
+}
+
+.parallax img#cloud1{
+    position: absolute;
+    width: 70%;
+    transform: translate(1000px, -300px);
+    z-index: -1;
+    pointer-events: none;
+}
+.parallax img#cloud2{
+    position: absolute;
+    width: 70%;
+    left: 0;
+    pointer-events: none;
+}
+.trig{
+    z-index: 0;
+    transform: translate(0, 300px);;
+}
+
+.Name_head{
+    width: 25%;
+}
+.Name_opacity{
+    opacity: 0;
+    transform: translateY(100px);
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+img.icon_flower{
+    width: 15%;
+    margin-left: -10%;
+    transform: rotate(-90deg);
+}
+
+/*sec3*/
+.section3{
+    height: 700px;
+}
+.parallax img#text2{
+    position: absolute;
+    width: 50%;
+    margin-top: 25%;
+    margin-left: 24%;
+    opacity: 1;
+    z-index: 10;
+    pointer-events: none;
+}
+.parallax img#ele15{
+    position: absolute;
+    width: 40%;
+    margin-top: -20%;
+    margin-left: -20%;
+    pointer-events: none;
+}
+.parallax img#ele14{
+    position: absolute;
+    width: 25%;
+    margin-top: 10%;
+    margin-left: 80%;
+    z-index: -2;
+    pointer-events: none;
+}
+.parallax img#s3_cloud2{
+    position: absolute;
+    width: 75%;
+    margin-top: 50%;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+/*sec4*/
+img#H_khon2{
+    opacity: 1;
+}
+img.LGraphic{
+    transform: translateX(-100px);
+    padding-bottom: 10%;
+    opacity: 0;
+    width: 75%;
+}
+img.icon_flower2{
+    width: 7%;
+    transform: rotate(-90deg);
+}
+.Name_opacity2{
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 15%;
+    transform: translateY(100px);
+    opacity: 0;
+    text-align: center;
+}
+/*sec5*/
+.section5{
+    height: 700px;
+}
+.parallax img#text3{
+    position: absolute;
+    width: 50%;
+    margin-top: 25%;
+    margin-left: 24%;
+    opacity: 1;
+    z-index: 10;
+    pointer-events: none;
+}
+.parallax img#s5_ele3{
+    position: absolute;
+    width: 7%;
+    margin-left: 20%;
+    margin-top: 10%;
+    transform: rotate(35deg);
+    pointer-events: none;
+}
+.parallax img#s5_ele3-2{
+    position: absolute;
+    width: 6%;
+    margin-left: 75%;
+    margin-top: 18%;
+    transform: rotate(35deg);
+    pointer-events: none;
+}
+.parallax img#s5_ele5{
+    position: absolute;
+    width: 10%;
+    margin-left: 8%;
+    margin-top: 35%;
+    transform: rotate(-85deg);
+    pointer-events: none;
+}
+.parallax img#s5_ele13{
+    position: absolute;
+    width: 30%;
+    margin-left: 85%;
+    margin-top: 0%;
+    z-index: 2;
+    pointer-events: none;
+}
+.parallax img#s5_cloud1{
+    position: absolute;
+    width: 70%;
+    margin-top: -10%;
+    margin-left: -5%;
+    left: 0;
+    z-index: -2;
+    transform: scaleX(-1);
+    pointer-events: none;
+}
+.parallax img#s5_cloud2{
+    position: absolute;
+    width: 75%;
+    margin-top: 35%;
+    margin-left: 25%;
+    transform: scaleX(-1);
+    pointer-events: none;
+}
+/*sec6*/
+img#H_khon3{
+    opacity: 1;
+}
+img.RGraphic2{
+    transform: translateX(100px);
+    padding-bottom: 10%;
+    opacity: 0;
+    width: 75%;
+}
+img.icon_flower3{
+    width: 7%;
+    transform: rotate(-90deg);
+}
+.Name_opacity3{
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 15%;
+    transform: translateY(100px);
+    opacity: 0;
+    text-align: center;
+}
+img#s6_ele11{
+    position: absolute;
+    width: 15%;
+    margin-left: 20%;
+    margin-top: -20%;
+    pointer-events: none;
+}
+img#s6_ele10{
+    position: absolute;
+    width: 8%;
+    margin-top: -35%;
+    pointer-events: none;
+}
+/*sec7*/
+.section7{
+    height: 700px;
+}
+.parallax img#text4{
+    position: absolute;
+    width: 50%;
+    margin-top: 25%;
+    margin-left: 24%;
+    opacity: 1;
+    z-index: 10;
+    pointer-events: none;
+}
+.parallax img#s7_ele14{
+    position: absolute;
+    width: 25%;
+    margin-top: -5%;
+    margin-left: -10%;
+    pointer-events: none;
+}
+.parallax img#s7_ele12{
+    position: absolute;
+    width: 33%;
+    margin-top: 20%;
+    margin-left: 80%;
+    pointer-events: none;
+}
+.parallax img#s7_ele8{
+    position: absolute;
+    width: 7%;
+    margin-left: 75%;
+    margin-top: 18%;
+    pointer-events: none;
+}
+.parallax img#s7_ele9{
+    position: absolute;
+    width: 6%;
+    transform: rotate(50deg);
+    margin-left: 82%;
+    margin-top: 10%;
+    pointer-events: none;
+}
+.parallax img#s7_cloud1{
+    position: absolute;
+    width: 75%;
+    margin-top: -20%;
+    margin-left: 25%;
+    z-index: -2;
+    pointer-events: none;
+}
+.parallax img#s7_cloud2{
+    position: absolute;
+    width: 75%;
+    margin-top: 35%;
+    left: 0;
+    z-index: -2;
+    pointer-events: none;
+}
+/*sec8*/
+img#H_khon4{
+    opacity: 1;
+}
+img.LGraphic2{
+    transform: translateX(-100px);
+    padding-bottom: 10%;
+    opacity: 0;
+    width: 75%;
+}
+img.icon_flower4{
+    width: 7%;
+    transform: rotate(90deg);
+}
+.Name_opacity4{
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 15%;
+    transform: translateY(100px);
+    opacity: 0;
+    text-align: center;
+}
+img#s8_ele2{
+    transform: rotate(-40deg);
+    position: absolute;
+    width: 7%;
+    margin-top: -30%;
+    margin-left: 4%;
+    pointer-events: none;
+}
+/*sec9*/
+.section9{
+    height: 900px;
+}
+.parallax img#s9_cloud{
+    position: absolute;
+    width: 200%;
+    margin-left: -50%;
+    margin-top: -20%;
+    z-index: -2;
+    pointer-events: none;
+}
+.parallax img#s9_cloud5{
+    position: absolute;
+    width: 100%;
+    margin-top: 20%;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+.parallax img#s9_cloud5_2{
+    position: absolute;
+    width: 60%;
+    margin-top: 20%;
+    transform: scaleX(-1);
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+
+
+
+
+h1{
+    font-family: 'Maitree', serif;
+    font-size: 44pt;
+    line-height:normal;
+    font-weight: 600;
+    overflow: hidden;
+}
+h2{
+    font-family: 'Maitree', serif;
+    font-size: 22pt;
+    line-height:normal;
+    font-weight: 500;
+    overflow:hidden;
+}
+h4{
+    font-family: 'Maitree', serif;
+    font-size: 18pt;
+    font-weight: 400;
+}
+.nature{
+    padding-left: 10%;
+}
+.head{
+    padding-left: 10%;
+}
+.about{
+        padding-left: 10%;
+}
+
+
