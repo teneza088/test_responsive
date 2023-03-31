@@ -1,0 +1,141 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+body{
+    background: url(Parallax/Homepage/mainpage-layer/layer1-01.png);
+    position: relative;
+}
+.center{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+.position-reletive{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+   
+}
+.abc{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
+.parallax{
+    display: block;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    
+}
+img{
+    position: absolute;
+    
+}
+
+.parallax img#Clound-Center{
+    width: 100%;
+    margin-top: 8%;
+}
+.parallax img#Clound-left{
+    width: 60%;
+    margin-top: 15%;
+    margin-left: 18%;
+}
+.parallax img#Clound2-left{
+    width: 60%;
+    margin-top: 30%;
+    margin-left: 15%;
+}
+.parallax img#Clound2-right{
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+.parallax img#Pole{
+    width: 80%;
+    margin-left: 10%;
+    
+}
+.parallax img#Cright{
+    width: 60%;
+    margin-top: 37%;
+    margin-left: 40%;
+}
+.parallax img#Cleft{
+    width: 40%;
+    margin-top: 15%;
+    margin-left: 0%;
+}
+.parallax img#Sun{
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 35%;
+    z-index: 1;
+}
+#Tong1{
+    position: absolute;
+    width: 18%;
+    margin-top: -1%;
+    margin-left: 41%;
+    z-index: 1;
+}
+#Tong2{
+    position: absolute;
+    width: 15%;
+    margin-top: -1%;
+    margin-left: 12%;
+    
+}
+#Tong3{
+    position: absolute;
+    width: 15%;
+    margin-top: -1%;
+    margin-left: 27%;
+    
+}
+#Tong4{
+    position: absolute;
+    width: 15%;
+    margin-top: -1%;
+    margin-left: 57.8%;
+   
+}
+#Tong5{
+    position: absolute;
+    width: 15%;
+    margin-top: -1%;
+    margin-left: 72.8%;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.scrollElement {
+    position: absolute;
+    height: 8000px;
+    width: 100px;
+    top: 0;
+    z-index: 0;
+}
+
+
+.Tong:hover .tong__1{
+    visibility: hidden;
+}
+.Tong:hover .tong__2{
+    visibility: hidden;
+}
+.Tong:hover .tong__3{
+    visibility: hidden;
+}
+.Tong:hover .tong__4{
+    visibility: hidden;
+}
+.Tong:hover .tong__5{
+    visibility: hidden;
+}

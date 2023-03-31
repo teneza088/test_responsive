@@ -1,0 +1,54 @@
+
+@media (max-width:1440px) {
+    .position-reletive{
+        position: fixed;
+        height: 65vh;
+        width: 100vw;
+        overflow: hidden;
+       
+    }
+    .parallax{
+        position: relative;
+        width: 100vw;
+        overflow: hidden;
+    }
+}
+@media (max-width:1200px) {
+    .position-reletive{
+        position: fixed;
+        height: 65vh;
+        width: 100vw;
+        overflow: hidden;
+       
+    }
+}
+@media (max-width:1024px) {
+    .position-reletive{
+        height: 35vh;
+    }
+}
+@media (max-width:992px) {
+    .position-reletive{
+        height: 55vh;
+    }
+}
+@media (max-width:820px) {
+    .position-reletive{
+        height: 33vh;
+    }
+}
+@media (max-width:576px) {
+    .position-reletive{
+        height: 23vh;
+    }
+}
+@media (max-height:576px) {
+    .position-reletive{
+        height: 84vh;
+    }
+}
+@media (max-height:420px) {
+    .position-reletive{
+        height: 100vh;
+    }
+}

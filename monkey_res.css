@@ -1,0 +1,260 @@
+@media (max-width:1026px) {
+    .video_{
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .modal-content {
+        width: 34%;
+        top: 23%;
+    }
+    .header{
+        height: 635px;
+        margin-top: 7%;
+    }
+    .parallax img#text2,.parallax img#text6{
+        margin-top: 45%;
+    }
+    .parallax img#text5{
+        margin-top: 48%;
+    }
+    .parallax img#text3,.parallax img#text4{
+        margin-top: 30%;
+    }
+    /*section3*/
+    .parallax img#s3_ele33,.parallax img#s3_cloud2{
+        margin-top: 60%;
+    }
+    /*section5*/
+    .parallax img#s5_ele9{
+        margin-top: 70%;
+    }
+    .parallax img#s5_ele21{
+        margin-left: 60%;
+        margin-top: 70%;
+    }
+    /*section7*/
+    .parallax img#s7_ele33{
+        margin-top: 35%;
+    }
+    /*section9*/
+    .parallax img#s9_ele23{
+        width: 0%;
+    }
+    .section1{
+        height: 650px;
+    }
+    .section3.section7{
+        height: 420px;
+    }
+    .section5{
+        height: 487px;
+    }
+    .section7{
+        height: 560px;
+    }
+    .section9{
+        height: 560px;
+    }
+    .section11{
+        height: 1300px;
+    }
+}
+@media (max-width:768px) {
+    .modal-content {
+        width: 44%;
+        top: 29%;
+    }
+    h1{
+        font-size: 28pt;
+    }
+    .header{
+        margin-top: 19%;
+        height: 635px;
+    }
+    .section1{
+        height: 500px;
+    }
+    .section3{
+        height: 400px;
+    }
+    .section5{
+        height: 400px;
+    }
+    .section7{
+        height: 400px;
+    }
+    .section9{
+        height: 470px;
+    }
+    .section11{
+        height: 830px;
+    }
+}
+@media (max-width:391px) {
+    h1{
+        font-size: 16pt;
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+    .modal-content {
+        width: 84%;
+        top: 34%;
+    }
+    .parallax img#text3,.parallax img#text4,.parallax img#text6{
+        width: 80%;
+        margin-top: 35%;
+        margin-left: 8%;
+    }
+    .parallax img#text2,.parallax img#text5{
+        width: 80%;
+        margin-top: 50%;
+        margin-left: 8%;
+    }
+    img.RGraphic,img.RGraphic2,img.LGraphic,img.LGraphic2{
+        padding-bottom: 0;
+    }
+    /*header*/
+    .parallax img#god{
+        width: 64%;
+        margin-left: 15%;
+    }
+    .parallax img#H_cloud1{
+        width: 90%;
+        margin-left: 20%;
+        margin-top: 25%;
+    }
+    .parallax img#H_cloud2{
+        width: 80%;
+        margin-top: 20%;
+    }
+    .parallax img#H_cloud3{
+        width: 50%;
+    }
+    .parallax img#H_cloud4{
+        width: 55%;
+    }
+    .parallax img#ele18{
+        width: 15%;
+        margin-left: 20%;
+    }
+    .parallax img#ele19{
+        width: 22%;
+        margin-left: 5%;
+        margin-top: 12%;
+    }
+    /*section3*/
+    .parallax img#s3_ele5{
+        z-index: -1;
+    }
+    .parallax img#s3_ele3{
+        width: 0%;
+    }
+    .parallax img#s3_ele23_2{
+        margin-left: 35%;
+        margin-top: 21%;
+    }
+    .parallax img#s3_ele24{
+
+        width: 15%;
+        margin-left: 10%;
+        margin-top: 18%;
+    }
+    /*section5*/
+    .parallax img#s5_cloud2{
+        width: 90%;
+        margin-top: 59%;
+    }
+    .parallax img#s5_ele9{
+        width: 10%;
+        margin-top: 80%;
+    }
+    .parallax img#s5_ele34{
+        margin-left: -10%;
+    }
+   
+    .parallax img#s5_ele21{
+        width: 35%;
+        margin-top: 80%;
+    }
+
+
+    /*section7*/
+    .parallax img#s7_ele3{
+        width: 0%;
+    }
+    .parallax img#s7_ele23_3,.parallax img#s7_ele23_2,.parallax img#s7_ele23{
+        width: 0%;
+    }
+    .parallax img#s7_ele23_4{
+        width: 12%;
+        margin-top: 75%;
+    }
+    .parallax img#s7_ele24{
+        width: 10%;
+        margin-left: 70%;
+    }
+    .parallax img#s7_ele24_2{
+        width: 14%;
+        margin-left: 80%;
+    }
+    .parallax img#s7_ele33{
+        margin-top: 50%;
+    }
+    .parallax img#s7_cloud1{
+        margin-top: 55%;
+    }
+
+
+    /*section9*/
+    .parallax img#s9_cloud2{
+        width: 85%;
+        margin-top: 80%;
+        margin-left: 10%;
+    }
+    .parallax img#s9_ele34{
+        margin-left: 76%;
+    }
+    .parallax img#s9_ele21{
+        width: 35%;
+        margin-top: 125%;
+        margin-left: 30%;
+    }
+    .parallax img#s9_ele8{
+        width: 15%;
+        margin-top: 100%;
+        margin-left: 45%;
+    }
+    .parallax img#s9_ele9{
+        width: 13%;
+    }
+    .parallax img#s9_ele3_2{
+        width: 10%;
+        z-index: -1;
+    }
+
+
+
+    .header{
+        margin-top: 19%;
+        height: 370px;
+    }
+    .section1{
+        height: 215px;
+    }
+    .section3{
+        height: 400px;
+    }
+    .section5{
+        height: 250px;
+    }
+    .section7{
+        height: 350px;
+    }
+    .section9{
+        height: 350px;
+    }
+    .section11{
+        height: 425px;
+    }
+}

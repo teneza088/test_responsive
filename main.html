@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="main.css" /> 
+    <link rel="stylesheet" type="text/css" href="main_res.css" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>main</title>
+    
+
+
+</head>
+<body>
+<div >
+    <style>
+        #loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+    <div id="loader" class="center"></div>
+    <h1>GeeksforGeeks</h1>
+    <h2>A computer science portal for geeks</h2>
+    <img src="https://i.imgur.com/KsQJA8I.png" alt="GeeksforGeeks logo" />
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                "body").style.visibility = "hidden";
+                document.querySelector(
+                "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                "#loader").style.display = "none";
+                document.querySelector(
+                "body").style.visibility = "visible";
+            }
+        };
+    </script>
+    
+
+
+
+
+
+
+    <div class="real">
+
+        <div id="mySidenav" class="sidenav ">
+            <a class="nav" href="Home.html">
+                    <div class="btn1">
+                    <img src="Parallax/Head/element/ele19.png"        id="nave_19">
+                    <img src="Parallax/Head/element/ele18.png"        id="nave_18">
+                    <h4 class="nav_text">หน้าหลัก</h4>
+                    </div>
+            </a>
+            <a class="nav" href="#">
+                <div class="btn1">
+                <img src="Parallax/Head/element/ele19.png"        id="nave_19">
+                <img src="Parallax/Head/element/ele18.png"        id="nave_18">
+                <h4 class="nav_text">กำเนิด “โขน”</h4>
+                </div>
+            </a>
+            <a class="nav" href="Head_Pha.html">  
+                <div class="btn1">
+                <img src="Parallax/Head/element/ele19.png"        id="nave_19">
+                <img src="Parallax/Head/element/ele18.png"        id="nave_18">
+                <h4 class="nav_text">ศีรษะเทพเจ้าและศีรษะบรมครู</h4>
+                </div>
+            </a>
+             <a class="nav" href="Head_Giant.html">
+                <div class="btn1">
+                <img src="Parallax/Head/element/ele19.png"        id="nave_19">
+                <img src="Parallax/Head/element/ele18.png"        id="nave_18">
+                <h4 class="nav_text">ศีรษะโขนยักษ์</h4>
+                </div>
+            </a>
+            <a class="nav" href="Head_Monkey.html">
+                <div class="btn1">
+                <img src="Parallax/Head/element/ele19.png"        id="nave_19">
+                <img src="Parallax/Head/element/ele18.png"        id="nave_18">
+                <h4 class="nav_text">ศีรษะโขนวานร</h4>
+                </div>
+            </a>
+            <a class="nav" href="#">
+                <div class="btn1">
+                <img src="Parallax/Head/element/ele19.png"        id="nave_19">
+                <img src="Parallax/Head/element/ele18.png"        id="nave_18">
+                <h4 class="nav_text">ห้องนิทรรศการ</h4>
+                </div>
+            </a>
+            <a class="nav" href="#">
+                <div class="btn1">
+                <img src="Parallax/Head/element/ele19.png"        id="nave_19">
+                <img src="Parallax/Head/element/ele18.png"        id="nave_18">
+                <h4 class="nav_text">ผู้จัดทำ</h4>
+                </div>
+            </a>
+          </div>
+          <div class="parallax">
+            <img  onclick="openNav()" src="Parallax/History/burger.png"        id="nave">
+            <img  onclick="closeNav()" src="Parallax/History/burger.png"        id="nave2">
+          </div>
+          <div class="parallax">
+            <img  onclick="unmute()"   src="Parallax/History/unmuted.png"          id="unmuted">
+            <img  onclick="mute()"  src="Parallax/History/mute.png"             id="mute">
+          </div>
+          
+
+
+
+
+          <audio src="music/laos.mp3"  controls loop  id="mp3" ></audio>
+    <!----------------------------------- Head ---------------------------------------------------------->
+    <div class="container-fluid parallax header" >
+        <img src="Parallax/Head/element/His.png"        id="god">
+        <img src="Parallax/Head/element/cloud1.png"     id="H_cloud1">
+        <img src="Parallax/Head/element/cloud2.png"     id="H_cloud2">
+        <img src="Parallax/Head/element/cloud3.png"     id="H_cloud3">
+        <img src="Parallax/Head/element/cloud4.png"     id="H_cloud4">
+        <img src="Parallax/Head/element/ele18.png"      id="ele18">
+        <img src="Parallax/Head/element/ele19.png"      id="ele19">
+    </div>
+    <!------------------------------------------------ section1 --------------------------------------------------------->
+    <div class="container-fluid parallax section1">
+        <img src="Image/khon mask/all-head-KHON-11.png"id="H_khon">
+        <img src="Image/khon mask/all-head-KHON-10_2.png"id="H_khon2">
+        <img src="Parallax/History/ele8.png"     id="s1_ele8">
+        <img src="Parallax/History/ele9.png"     id="s1_ele9">
+
+        <div class="text_1">
+            <h2 class="text_1_2">โขนเป็นนาฏศิลป์ชั้นสูงที่เก่าแก่ของไทย มีมาตั้งแต่สมัยกรุงศรีอยุธยา</h2>
+            <h2 class="text_1_3">ตามหลักฐานจากจดหมายเหตุของ ลาลูแบร์ ราชทูตฝรั่งเศสสมัยสมเด็จพระนารายณ์มหาราช</h2>
+            <h2 class="text_1_4">ได้กล่าวถึงการเล่นโขนว่า “เป็นการเต้นออกท่าทางเข้ากับเสียงซอและเครื่องดนตรีอื่น ๆ</h2>
+            <h2 class="text_1_5">โดยผู้เต้นจะสวมหน้ากากและถืออาวุธ”</h2>
+        </div>
+    </div>
+
+    <!--------------------------------------------- section2 -------------------------------------------------->
+    <div class="container-fluid parallax section2">
+        <div class="text_2">
+        <h2 style="display: inline;">ต่อมา</h2>
+        <h2 style="display: inline; color: #A8564A; font-weight: 600;">“โขน”</h2> 
+        <h2 style="display: inline;">ปรากฏครั้งแรกในสมัยพระนารายณ์มหาราช</h2><br>
+        <h2 style="display: inline;">ซึ่งถูกกล่าวถึงใน </h2>  
+        <h2 style="display: inline; color: #A8564A; font-weight: 600;">ลิลิตพระลอ</h2> 
+        </div>
+        <img src="Parallax/History/ele10.png"     id="s2_ele10">
+        <img src="Parallax/History/ele11.png"     id="s2_ele11">
+    </div>
+       <!------------------------------------------------ section3 ---------------------------------------------------------> 
+       <div class="container-fluid parallax section3 ">
+        <div class="text_3">
+            <h2 >จากการสันนิษฐานที่มีความเป็นไปได้ที่สุด พบว่าโขนเป็นรากศัพท์มาจาก</h2>
+            <h2>ภาษาเบงคลี ภาษาทมิฬและภาษาอิหร่าน ซึ่งพ่อค้าวาณิชและชาวพื้นเมือง</h2>
+            <h2>ในสมัยก่อนเป็นคนริเริ่มนำเข้ามาและเริ่มเผยแพร่จากหมู่เกาะชวา มลายูและ</h2>    
+            <h2>แหลมอินโดจีนเข้ามาในไทยที่สุด แต่จากข้อสันนิษฐานต่าง ๆ ก็ไม่อาจสรุปได้ว่า</h2>    
+            <h2>“โขน” เป็นคำมาจากภาษาใดกันแน่</h2>     
+        </div>
+        <div class="text_4">
+             <h2 >การเล่นโขนในประเทศไทย กำเนิดขึ้นเมื่อใดนั้นไม่มีหลักฐานชัดเจนระบุแน่ชัด</h2>
+            <h2>ถ้าตามหลักฐานทางโบราณคดีจะพบว่า ปรากฏในเรื่องรามเกียรติ์ ที่เป็นวรรณกรรม</h2>
+            <h2>ของมหากิวีภาลิทาศชาวอินเดียโบราณ แต่ก็ไม่ได้กล่าวไว้ว่ามีการเล่นโขนกันในสมัยนั้น</h2>    
+        </div>
+        <img src="Parallax/History/ele12.png"     id="s3_ele12">
+        <img src="Parallax/History/ele13.png"     id="s3_ele13">
+        <img src="Parallax/History/ele14.png"     id="s3_ele14">
+        <img src="Parallax/History/ele15.png"     id="s3_ele15">
+       
+    </div> 
+    <!----------------------------------------------section4------------------------------------------------->
+     
+    <div class="container-fluid parallax section4">
+        <div class="text_5">
+            <h2 >พระราชพิธีอย่างหนึ่งในสมัยอยุธยาที่น่าจะเป็น</h2>
+            <h2>ต้นกำเนิดการเล่นโขน</h2>
+            <h2 style="display: inline;">คือ การเล่น</h2>    
+            <h2 style="display: inline; color: #A8564A; font-weight: 600;">“ชักนาคดึกดำบรรพ์” </h2>   
+       </div>
+       <div class="text_6">
+            <h2 >ซึ่งปรากฏอยู่ในกฏมณเฑียรบาลสมัยกรุงศรีอยุธยา</h2>
+            <h2>ในรัชสมัยสมเด็จพระบรมไตรโลกนาถ</h2> 
+        </div>
+        <img src="Parallax/History/ele7.png"     id="s4_ele7">
+        <img src="Parallax/History/cloud_8.png"     id="s4_cloud_8">
+        <img src="Parallax/History/cloud_7.png"     id="s4_cloud_7">
+        <img src="Parallax/History/cloud_6.png"     id="s4_cloud_6">
+
+
+    </div>
+       <!------------------------------------------------ section5 ---------------------------------------------------------> 
+       <div class="container-fluid parallax section5 ">
+
+        <img src="Parallax/History/ele19.png"       id="s5_ele19">
+        <img src="Parallax/History/ele20.png"       id="s5_ele20">
+        <img src="Parallax/History/ele21.png"       id="s5_ele21">
+        <img src="Parallax/History/ele22.png"       id="s5_ele22">
+        <img src="Parallax/History/ele19.png"       id="s5_ele19_2">
+        <img src="Parallax/History/ele20.png"       id="s5_ele20_2">
+        <img src="Parallax/History/ele21.png"       id="s5_ele21_2">
+        <img src="Parallax/History/ele22.png"       id="s5_ele22_2">
+
+
+        <img src="Parallax/History/ele16.png"       id="s5_ele16">
+        <img src="Parallax/History/ele16.png"       id="s5_ele16_2">
+        <img src="Parallax/History/ele17.png"       id="s5_ele17">
+        <img src="Parallax/History/ele18.png"       id="s5_ele18">
+        <img src="Parallax/History/cloud_3.png"     id="s5_cloud_3">
+        <img src="Parallax/History/cloud_6.png"     id="s5_cloud_6">
+       
+    </div>   
+    <!--------------------------------------------- section6 -------------------------------------------------->
+    <div class="row container-fluid parallax section6">
+        <img src="Parallax/History/cloud_1.png"     id="s6_cloud_1">
+        <div class="col-lg-5 justify-content">
+            <img src="Parallax/History/rama1.png"  class="img-fluid" alt="Responsive image"     id="s6_rama1">
+        </div>
+        <div class="col-lg-7 text_center">
+            <div class="text_7">
+                <h1 class="text_7_2" style="color: #A8564A;">ต่อมาช่วงต้นสมัยรัตนโกสินทร์</h1>
+                <h1 class="text_7_2" style="color: #A8564A;">ในสมัยพระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราช รัชกาลที่ 1</h1> 
+                <h2 class="text_7_3">ในรัชสมัยนี้ทรงโปรดให้หัดละครใน เรื่องรามเกียรติ์และอีกหลายเรื่อง</h2>
+                <h2 class="inline">การเล่นโขนสมัยนี้จึงเริ่มต้นอย่างจริงจัง มีการฝึกโขนหลวงขึ้น จึงคาดว่าเป็นการริเริ่ม </h2> 
+                <h2 class="inline">การแสดงโขน</h2>
+            </div>
+        </div>
+        
+    </div>
+       
+    
+    <!------------------------------------------------ section7 ---------------------------------------------------------> 
+    <div class="row container-fluid parallax section7 ">
+       
+        <div class="col-lg-8 text_center" >
+            <div class="text_8 ">
+                <h1 class="text_8_2 " style="color: #A8564A;">ในสมัยพระบาทสมเด็จพระพุทธเลิศหล้านภาลัย รัชกาลที่ 2</h1>
+                <h2 class="text_8_3 " >ทรงพระราชนิพนธ์บทพากย์รามเกียรติ์หลายตอน เช่น นางลอย พรหมาสตร์</h2>
+                <h2 class="text_8_3 ">และยังทรงพระราชนิพนธ์บทละครเรื่องรามเกียรติ์ใหม่สำหรับเฉพาะตอนที่ใช้แสดง</h2> 
+            </div>
+                
+        </div>
+        <div class="col-lg-4 justify-content">
+            <img src="Parallax/History/rama2.png" class="img-fluid" alt="Responsive image"      id="s7_rama2">
+        </div>
+                <img src="Parallax/History/ele4.png"       id="s7_ele4">
+                <img src="Parallax/History/ele5.png"       id="s7_ele5">
+                <img src="Parallax/History/ele6.png"       id="s7_ele6">
+
+    </div>
+    <!--------------------------------------------- section8 -------------------------------------------------->
+    <div class="row container-fluid parallax section8">
+        <img src="Parallax/History/cloud_9.png"     id="s8_cloud_9">
+        <div class="col-lg-5 justify-content">
+            <img src="Parallax/History/rama3.png"   class="img-fluid" alt="Responsive image"    id="s8_rama3">
+        </div>
+        <div class="col-lg-7 text_center">
+            <div class="text_9">
+                <h1 class="text_9_2" style="color: #A8564A;">ต่อมาในสมัยพระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว รัชกาลที่ 3</h1>
+                <h2 class="text_9_3" >พระองค์ไม่โปรดการเล่นโขน ทั้ง ๆ ที่เคยเป็นเจ้าของโรงโขน</h2>
+                <h2 class="text_9_4">ในขณะดำรงพระยศเป็นกรมหมื่นเจษฎาบดินทร์</h2> 
+                <h2 class="text_9_5" >เมื่อขึ้นครองราชย์ก็ให้ยกเลิกโรงโขนของพระองค์</h2>
+            </div>
+        </div>
+
+    </div> 
+    <!-----------------------------------------------section9----------------------------------------------------->  
+    <div class="row container-fluid parallax section9">
+        <img src="Parallax/History/cloud_2.png"     id="s9_cloud_2">
+        <div class="col-lg-7 text_center" >
+            <div class="text_10">
+                <h1 class="text_10_2" style="color: #A8564A;">เมื่อถึงสมัยพระบาทสมเด็จพระจอมเกล้าเจ้าอยู่หัว รัชกาลที่ 4</h1>
+                <h2 class="text_10_3">ทรงเปลี่ยนแปลงการเล่นโขนให้มีละครผู้หญิงได้ โดยโขนที่มี</h2>
+                <h2 class="text_10_4">ชื่อเสียงมากในรัชกาลที่ 4 คือ โขนของกรมพระพิทักษ์เทเวศน์</h2> 
+            </div>
+        </div>
+        <div class="col-lg-5 justify-content">
+            <img src="Parallax/History/rama4.png"  class="img-fluid" alt="Responsive image"     id="s9_rama4">
+        </div>
+        
+    </div> 
+    <!--------------------------------------------- section10 -------------------------------------------------->
+    <div class="row container-fluid parallax section10">
+
+        <div class="col-lg-5 justify-content">
+            <img src="Parallax/History/rama5.png"   class="img-fluid" alt="Responsive image"    id="s10_rama5">
+        </div>
+        <div class="col-lg-7 text_center">
+            <div class="text_11">
+                <h1  style="color: #A8564A;">ต่อมาในสมัยพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว รัชกาลที่ 5</h1>
+                <h2>ได้ทรงตั้ง “กรมโขน” สำหรับโขนหลวงและทรงตั้งกรมอื่น ๆ อีก เช่น กรมหุ่น</h2>
+                <h2>กรมหกคะเนรำโดม กรมปี่พาทย์ และกรมมหรสพ</h2> 
+            </div>
+        </div>
+
+    </div>
+    <!-----------------------------------------------section11----------------------------------------------------->  
+    <div class="row container-fluid parallax section11">
+        
+        <div class="col-lg-8 text_center" >
+            <div class="text_12">
+                <h1 class="text_12_2" style="color: #A8564A;">ต่อมาในสมัยพระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว รัชกาลที่ 6</h1>
+                <h2 class="text_12_3" >พระองค์ทรงคลุกคลีอยู่กับการมหรสพ ได้โปรดให้หัดมหาดเล็ก</h2>
+                <h2 class="text_12_4">ขึ้นเล่นโขนตามแบบแผนที่เป็นมาแต่โบราณ โดยโขนที่โปรดให้</h2> 
+                <h2 class="text_12_5">ฝึกหัดขึ้นมาชื่อว่า “โขนสมัครเล่น” และได้นำออกแสดงงานสำคัญ</h2> 
+                <h2 class="text_12_6">ในปลายรัชกาลที่ 5 อีกหลายครั้ง</h2> 
+            </div>
+        </div>
+        <div class="col-lg-4 justify-content">
+            <img src="Parallax/History/rama6.png" class="img-fluid" alt="Responsive image"      id="s11_rama6">
+        </div>
+        
+    </div> 
+    <!-----------------------------------------------section12----------------------------------------------------->  
+    <div class="container-fluid parallax section12">
+        <img src="Parallax/History/khon-01.png"id="s12_khon_01">
+        <img src="Parallax/History/khon-05.png"id="s12_khon_05">
+
+
+        <div class="text_13">
+            <h1 style="color: #A8564A;">การโขนละครในสมัยรัชกาลที่ 6 จึงเป็นยุคเฟื่องฟู</h1>
+            <h1 style="color: #A8564A;">และนับว่าเจริญสูงสุดของการมหรสพไทย</h1>
+            <h2>รวมถึงได้มีการจัดตั้งเป็นกรมมหรสพขึ้น</h2>
+            <h2>เป็นการรวบรวมโขนและละครเข้าไว้ด้วยกัน</h2>
+        </div>
+    </div>
+    <!--------------------------------------------- section13 -------------------------------------------------->
+    <div class="row container-fluid parallax section13">
+        <img src="Parallax/History/cloud_6.png"     id="s13_cloud_6">
+        <div class="col-lg-5 justify-content">
+            <img src="Parallax/History/rama7.png"   class="img-fluid" alt="Responsive image"    id="s13_rama7">
+        </div>
+        <div class="col-lg-7 text_center">
+            <div class="text_14">
+                <h1 class="text_14_2" style="color: #A8564A;">เมื่อเข้าสู่สมัยพระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว รัชกาลที่ 7</h1> 
+                <h2 class="text_14_3" >ด้วยสภาวะความแตกต่างทางเศรษฐกิจทำให้ต้องยกเลิกกรมมหรสพไป</h2>
+                <h2 class="text_14_4">ส่วนเครื่องโขนและละครให้กรมมหรสพมอบให้แก่พิพิธภัณฑสถานแห่งชาติ</h2> 
+            </div>
+        </div>
+
+    </div>
+    <!-----------------------------------------------section14----------------------------------------------------->  
+    <div class="row container-fluid parallax section14">
+        
+        <div class="col-lg-8 text_center" >
+            <div class="text_15">
+                <h1 class="text_15_2" style="color: #A8564A;">เมื่อถึงสมัยพระบาทสมเด็จพระปรเมนทรมหาอานันทมหิดล รัชกาลที่ 8</h1>
+                <h2 class="text_15_3" >ได้เกิดสงครามโลกครั้งที่ 2 การเล่นโขนจึงเงียบเหงาอีกครั้ง หลังสงครามจบลง</h2>
+                <h2 class="text_15_4">ก็มีความพยายามฟื้นฟูโขนกลับมา</h2> 
+            </div>
+        </div>
+        <div class="col-lg-4 justify-content">
+            <img src="Parallax/History/rama8.png"  class="img-fluid" alt="Responsive image"     id="s14_rama8">
+        </div>
+        
+    </div> 
+    <!-----------------------------------------------section15----------------------------------------------------->  
+    <div class="container-fluid parallax section15">
+        <img src="Parallax/History/cloud_7.png"     id="s15_cloud_7">
+        <img src="Parallax/History/cloud_7.png"     id="s15_cloud_7_2">
+        <img src="Parallax/History/cloud_7.png"     id="s15_cloud_7_3">
+        <img src="Parallax/History/cloud_7.png"     id="s15_cloud_7_4">
+        <img src="Parallax/History/cloud_7.png"     id="s15_cloud_7_5">
+        <img src="Parallax/History/cloud_7.png"     id="s15_cloud_7_6">
+        <img src="Parallax/History/cloud_8.png"     id="s15_cloud_8">
+        <img src="Parallax/History/rama9.png"       id="s15_rama9">
+        
+    </div> 
+    <!-----------------------------------------------section16----------------------------------------------------->  
+    <div class="container-fluid parallax section16">
+        <div class="text_16">
+            <h1 style="color: #A8564A;">ในสมัยพระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร รัชกาลที่ 9</h1>
+            <h2 class="text_16_2" >มีการอุปถัมภ์การแสดงโขน และสมเด็จพระนางเจ้าสิริกิต์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง</h2>
+            <h2 class="text_16_3">มีพระราชดำริเรื่องการฟื้นฟูโขน และมีพระราชเสาวนีย์เกี่ยวกับการส่งเสริมและจัดทำเครื่องแต่งกาย</h2> 
+        </div>
+        
+    </div> 
+    <!-----------------------------------------------section17----------------------------------------------------->  
+    <div class="container-fluid parallax section17">
+        <div class="text_17">
+            <h2>รวมถึงได้ให้มูลนิธิส่งเสริมศิลปาชีพฯ จัดแสดงโขนถวาย และทรงพระกรุณาโปรดเกล้าฯ</h2>
+            <h2>ให้จัดแสดงโขนแก่ประชาชนทุกปี โดยทรงเลือกตอนที่จะจัดแสดงด้วยพระองค์เอง</h2>
+            <h2>จึงเป็นเหตุผลที่ประชาชนเรียกโขนที่จัดแสดงโดยมูลนิธิส่งเสริมศิลปาชีพฯ</h2> 
+            <h2 style="display: inline;">ว่า</h2>
+            <h2 style="color: #A8564A;display: inline; font-weight: 600;">“โขนพระราชทาน”</h2>
+        </div>
+        <img src="Parallax/History/Royal.png"           id="s17_royal">
+        <img src="Parallax/History/khon-02.png"         id="s17_khon-02">
+        <img src="Parallax/History/khon-03.png"         id="s17_khon-03">
+        <img src="Parallax/History/cloudfull.png"         id="s17_cloudfull">
+        
+    </div> 
+    <!--------------------------------------------- section18 -------------------------------------------------->
+    <div class="row container-fluid parallax section18">
+        <div class="col-lg-5 justify-content">
+            <img src="Parallax/History/rama10.png"   class="img-fluid" alt="Responsive image"    id="s18_rama10">
+        </div>
+        <div class="col-lg-7 text_center">
+            <div class="text_18">
+                <h3 style="color: #A8564A;">โขนมูลนิธิส่งเสริมศิลปาชีพ</h3> 
+                <h3 style="color: #A8564A;">ในสมเด็จพระพันปีหลวง</h3>
+                <h2 class="text_18_2">จนถึงรัชสมัยพระบาทสมเด็จพระเจ้าอยู่หัวมหาวชิราลงกรณ</h2>
+                <h2 class="text_18_3">บดินทรเทพยวรางกูร รัชกาลที่ 10</h2> 
+                <h2 class="text_18_4">มีการสานต่อและใช้ชื่อว่า</h2> 
+                <h2 class="text_18_5">“โขนมูลนิธิส่งเสริมศิลปาชีพในสมเด็จพระพันปีหลวง”</h2> 
+            </div>
+        </div>
+
+    </div>
+    <!------------------------------------------------ section19 ---------------------------------------------------------> 
+    <div class="container-fluid parallax section19 ">
+        
+        <img src="Parallax/History/ele19.png"       id="s19_ele19">
+        <img src="Parallax/History/ele20.png"       id="s19_ele20">
+        <img src="Parallax/History/ele21.png"       id="s19_ele21">
+        <img src="Parallax/History/ele22.png"       id="s19_ele22">
+        <img src="Parallax/History/ele19.png"       id="s19_ele19_2">
+        <img src="Parallax/History/ele20.png"       id="s19_ele20_2">
+        <img src="Parallax/History/ele21.png"       id="s19_ele21_2">
+        <img src="Parallax/History/ele22.png"       id="s19_ele22_2">
+
+
+        <img src="Parallax/History/ele16.png"       id="s19_ele16">
+        <img src="Parallax/History/ele16.png"       id="s19_ele16_2">
+        <img src="Parallax/History/ele17.png"       id="s19_ele17">
+        <img src="Parallax/History/ele18.png"       id="s19_ele18">
+        <img src="Parallax/History/cloud_3.png"     id="s19_cloud_3">
+       
+    </div>   
+    <!--------------------------------------------- section20 -------------------------------------------------->
+    <div class="row container-fluid parallax section20">
+            <img src="Parallax/History/ele23.png"   class="img-fluid" alt="Responsive image"    id="s20_ele23">
+            <img src="Parallax/History/cloud10.png"  id="s20_cloud10">
+            <div class="text_19">
+                <div class="head_">
+                    <img src="Parallax/History/ele24.png"       id="s20_ele24">
+                    <h3 class="P" style="color: #A8564A;">หัวโขน</h3> 
+                </div>
+                <h2 class="P2">หัวโขน หมายถึง เครื่องสวมศีรษะ เป็นศิราภรณ์เพื่อสวมศีรษะ</h2>
+                <h2 class="P2">บ่งบอกถึงเครื่องยศและลักษณะตัวละครในการแสดงโขน</h2> 
+            </div>
+    </div>
+    <!--------------------------------------------- section21 -------------------------------------------------->
+    <div class="container-fluid parallax section21">
+        <img src="Parallax/History/ele1.png"  id="s21_ele1">
+        <img src="Parallax/History/ele2.png"  id="s21_ele2">
+        <img src="Parallax/History/ele3.png"  id="s21_ele3">
+        <img src="Parallax/History/ele14.png"  id="s21_ele14">
+        <img src="Parallax/History/ele25.png"  id="s21_ele25">
+        <img src="Parallax/History/ele25.png"  id="s21_ele25_2">
+        <img src="Parallax/History/ele26.png"  id="s21_ele26">
+        <img src="Parallax/History/ele26.png"  id="s21_ele26_2">
+        <img src="Parallax/History/ele27.png"  id="s21_ele27">
+        <div class="text_20">
+            <h2 class="text_20_2" >ในการแสดงโขน ส่วนประกอบสำคัญนอกจากผู้แสดง วงดนตรีที่เล่น และเครื่องแต่งกายแล้ว</h2>
+            <h2 class="text_20_3">ยังมีส่วนประกอบสำคัญอีกหนึ่งอย่าง คือ หัวโขน</h2> 
+            <h2 class="text_20_4">ซึ่งเป็นส่วนสำคัญ ที่บอกให้ผู้ชมการแสดงรู้ว่า ผู้แสดงโขนนั้นแสดงเป็นตัวอะไร</h2>
+            <h2 class="text_20_5">เช่น หัวพระราม พระลักษณ์ หรือหนุมาน</h2> 
+        </div>
+    </div>
+    <!--------------------------------------------- section22 -------------------------------------------------->
+    <div class="container-fluid parallax section22">
+        <div class="text_21">
+            <h2 class="text_21_2" >และด้วยเหตุที่โขนมักจะเล่นเรื่อง รามเกียรติ์ ซึ่งมีเนื้อเรื่องเกี่ยวพันกัน</h2>
+            <h2 class="text_21_3">ระหว่างมนุษย์ อมนุษย์ เทพยดาต่าง ๆ การแสดงจะสมมติให้ผู้แสดง</h2> 
+            <h2 class="text_21_4">เป็นตัวละครต่าง ๆ จำนวนมาก จึงจำเป็นต้องประดิษฐ์คิดค้นแต่งหน้า</h2>
+            <h2 class="text_21_5">ให้คล้ายกับบุคลิกของตัวโขนตามท้องเรื่อง ซึ่งเป็นที่มาของการประดิษฐ์</h2> 
+            <h2 class="text_21_6">และจัดทำ “หัวโขน” ขึ้นมานั่นเอง</h2> 
+        </div>
+    </div>
+    <!--------------------------------------------- section23 -------------------------------------------------->
+    <div class="container-fluid parallax section23">
+        <div class="text_22">
+            <h2 class="text_22_1">ซึ่งหัวโขนยังถูกกำหนดด้วยแบบแผน จารีตของหัวโขนไว้อย่างเคร่งครัด เช่น สี และลักษณะของหัวโขน</h2>
+            <h2 class="text_22_2" >ซึ่งหากทำผิดไปจากที่ครูโบราณกำหนดไว้ก็ถือว่าผิดทั้งหมด การทำหัวโขนจึงต้องใช้ทั้งความรู้ ความประณีต</h2> 
+            <h2 class="text_22_3" >ละเอียดอ่อน ในการรังสรรค์ เพื่อให้เกิดความงดงาม ความถูกต้องตามเอกลักษณ์ของหัวโขนนั้น ๆ</h2>
+
+        </div>
+    </div>
+    <!--------------------------------------------- section24 -------------------------------------------------->
+    <div class="container-fluid parallax section24">
+        <div class="logo">
+            <img src="Parallax/History/logo.png"             id="s24_logo">
+            <div class="text_23">
+                <h2 style="color: #A8564A;">© Copyright 2023 The art of Khon Mask </h2>
+            </div>
+        </div>
+        <img src="Parallax/History/bottom.png"             id="s24_cloud">
+
+    </div>
+    <!------------------------------------------------------------------------------------------------------------>  
+
+</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+    
+
+
+
+    <script>
+        
+    </script>
+    
+
+</body>
+</html>
